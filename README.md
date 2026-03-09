@@ -29,6 +29,27 @@ Currently, there is no insurance system that protects gig workers from income lo
 
 The goal of this project is to create an AI-powered parametric insurance platform that automatically detects disruptions and provides instant compensation for lost income.
 
+## Persona Based Scenario
+
+Persona: Ravi – Food Delivery Partner (Swiggy)
+
+Age: 26  
+City: Chennai  
+Average Daily Earnings: ₹600  
+Weekly Earnings: ₹3500 – ₹4500  
+
+Scenario:
+
+Ravi works as a Swiggy delivery partner in Chennai.  
+During heavy rainfall, many restaurants temporarily stop delivery operations.
+
+Because of this disruption, Ravi cannot accept orders for several hours and loses part of his daily income.
+
+GigShield AI detects the extreme rainfall event using weather APIs and automatically triggers a payout for Ravi based on the insured coverage plan.
+
+This ensures Ravi receives compensation for the lost working hours without manually filing a claim.
+
+
 ## Weekly Premium Model
 
 GigShield AI uses a weekly subscription model aligned with the earning cycle of gig workers.
@@ -121,6 +142,30 @@ Air Quality API
 
 Payment Gateway  
 Razorpay Sandbox / Stripe Test Mode
+
+## Development Plan
+
+Phase 1 – Ideation & Design
+• Problem research
+• Persona definition
+• System architecture
+• UI wireframes
+
+Phase 2 – Core System Development
+• Worker registration system
+• Weekly insurance policy management
+• Dynamic premium calculation
+• Parametric disruption trigger engine
+
+Phase 3 – AI & Automation
+• Fraud detection system
+• Risk prediction models
+• Automated claims processing
+
+Phase 4 – Dashboard & Deployment
+• Worker dashboard
+• Admin analytics dashboard
+• Payment simulation integration
 
 
 ## System Architecture
