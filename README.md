@@ -127,32 +127,26 @@ Razorpay Sandbox / Stripe Test Mode
 ```mermaid
 flowchart LR
 
-User[Delivery Worker App]
-Admin[Admin Dashboard]
-
-User --> API
-Admin --> API
-
-API[API Gateway]
+User[Delivery Worker Mobile App] --> API[API Gateway]
+Admin[Admin Dashboard] --> API
 
 API --> Auth[Authentication Service]
-API --> InsuranceEngine[Insurance Engine]
+API --> Engine[Insurance Engine]
 
-InsuranceEngine --> RiskAI[AI Risk Prediction]
-InsuranceEngine --> FraudAI[Fraud Detection]
+Engine --> RiskAI[AI Risk Prediction]
+Engine --> FraudAI[Fraud Detection]
 
 RiskAI --> WeatherAPI[Weather API]
 RiskAI --> PollutionAPI[Pollution API]
 
-InsuranceEngine --> ClaimProcessor
-ClaimProcessor --> PaymentGateway
+Engine --> ClaimProcessor[Claim Processor]
+ClaimProcessor --> PaymentGateway[Payment Gateway]
 
 PaymentGateway --> WorkerPayout[Worker Payout]
 
-InsuranceEngine --> Database[(Database)]
-
-Database --> DashboardAnalytics
-
+Engine --> Database[(Database)]
+Database --> Analytics[Analytics Dashboard]
+```
 
 
 
