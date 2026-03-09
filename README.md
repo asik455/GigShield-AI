@@ -152,38 +152,30 @@ Database --> Analytics[Analytics Dashboard]
 
 ---
 
-# 1️⃣1️⃣ Application Workflow Diagram
-
-```markdown
 ## Application Workflow
 
 ```mermaid
 flowchart TD
 
-Start[Worker Registers]
+A[Worker Registers] --> B[Buy Weekly Insurance Plan]
 
-Start --> Policy[Buy Weekly Insurance Plan]
+B --> C[System Monitors Weather and Pollution Data]
 
-Policy --> Monitor[System Monitors External Data]
+C --> D{Disruption Detected?}
 
-Monitor --> WeatherCheck{Disruption Detected?}
+D -->|Yes| E[Trigger Claim]
 
-WeatherCheck -->|Yes| Trigger[Parametric Trigger Activated]
+E --> F[Fraud Detection]
 
-Trigger --> FraudCheck[Fraud Detection]
+F -->|Valid| G[Approve Claim]
 
-FraudCheck -->|Valid| Payout[Instant Payout Processed]
+G --> H[Instant Payout]
 
-Payout --> Notify[Worker Receives Notification]
+H --> I[Worker Receives Notification]
 
-WeatherCheck -->|No| Continue[Continue Monitoring]
+D -->|No| J[Continue Monitoring]
+```
 
-
----
-
-# 1️⃣2️⃣ Data Flow Diagram
-
-```markdown
 ## Data Flow Diagram
 
 ```mermaid
@@ -191,17 +183,18 @@ flowchart LR
 
 Worker --> App
 App --> Backend
+
 Backend --> WeatherAPI
 Backend --> PollutionAPI
-Backend --> RiskModel
 
-RiskModel --> ClaimsEngine
+Backend --> AIModel
+
+AIModel --> ClaimsEngine
+
 ClaimsEngine --> PaymentGateway
+
 PaymentGateway --> Worker
-
-
-
----
+```
 
 # 1️⃣3️⃣ Future Enhancements
 
