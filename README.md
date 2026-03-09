@@ -4,33 +4,34 @@
 
 ## Project Overview
 
-GigShield AI is an AI-powered parametric insurance platform designed to protect gig economy delivery workers from income loss caused by external disruptions such as extreme weather, pollution, and sudden regional restrictions.
+GigShield AI is a parametric insurance platform designed to protect gig economy delivery workers from income loss due to external disruptions like extreme weather, pollution, and sudden regional restrictions.
 
-Gig workers such as Swiggy, Zomato, Amazon, or Zepto delivery partners earn income only when they are actively working. However, events like heavy rainfall, extreme heat, floods, or curfews can temporarily stop deliveries, leading to immediate income loss.
+Gig workers, such as Swiggy, Zomato, Amazon, or Zepto delivery partners, earn money only when they are actively working.
 
-GigShield AI addresses this problem by automatically detecting disruptions and triggering instant payouts using a parametric insurance model.
+Events like heavy rainfall, extreme heat, floods, or curfews can halt deliveries, leading to immediate income loss.
 
-Instead of manually filing claims, the system automatically identifies disruption events using external data sources and compensates workers for lost income.
+GigShield AI solves this issue by automatically detecting disruptions and triggering instant payouts through a parametric insurance model.
 
-The platform integrates AI for risk prediction, dynamic premium calculation, and fraud detection to ensure fair pricing and prevent misuse.
+Instead of filing claims manually, the system uses external data sources to identify disruptions and compensates workers for lost income.
+
+The platform uses AI for risk prediction, premium calculation, and fraud detection to ensure fair pricing and prevent misuse.
 
 
 ## Problem Statement
 
-India’s gig economy heavily relies on delivery partners working for platforms such as Swiggy, Zomato, Amazon, and Zepto.
+India’s gig economy heavily relies on delivery partners working for platforms like Swiggy, Zomato, Amazon, and Zepto.
 
-These workers earn income on a daily basis and are vulnerable to external disruptions like heavy rain, extreme heat, high pollution levels, or government restrictions.
+These workers earn money daily and are vulnerable to external disruptions like heavy rain, extreme heat, high pollution levels, or government restrictions.
 
-During such disruptions, deliveries may be halted, causing gig workers to lose a significant portion of their income.
+During these disruptions, deliveries may stop, and gig workers can lose a significant portion of their income.
 
 Currently, there is no insurance system that protects gig workers from income loss caused by these external factors.
 
-The goal of this project is to build an AI-powered parametric insurance platform that automatically detects disruptions and provides instant compensation for lost income.
-
+The goal of this project is to create an AI-powered parametric insurance platform that automatically detects disruptions and provides instant compensation for lost income.
 
 ## Weekly Premium Model
 
-GigShield AI follows a weekly subscription model aligned with the earning cycle of gig workers.
+GigShield AI uses a weekly subscription model aligned with the earning cycle of gig workers.
 
 Example Pricing Model:
 
